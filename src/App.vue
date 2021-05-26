@@ -1,19 +1,22 @@
 <template>
  <appheader></appheader>
  <app-body></app-body>
-
+<app-footer></app-footer>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Body from './components/body.vue'
+import Header from './components/Header'
+import Body from './components/Body'
+import Footer from './components/Footer';
 
 
 export default {
 	name: 'App',
 	components: {
 		appheader: Header,
-		appBody: Body
+		appBody: Body,
+		appFooter: Footer,
+
 	},
 };
 </script>
@@ -28,6 +31,7 @@ export default {
 	width: 1390px;
 	margin: auto;
 	background-color: #fff;
-
 }
+
+
 </style>
